@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Natalie Goldsworthy — Portfolio</title>
+  <meta name="description" content="Portfolio of Natalie Goldsworthy: computer science, data science, and digital narrative & interactive design at the University of Pittsburgh." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <a class="brand" href="#top">ng<span class="caret">_</span></a>
+    <nav aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span aria-hidden="true">◐</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <p class="eyebrow mono">Hello, I'm</p>
+      <h1>Natalie Goldsworthy.</h1>
+      <p class="tagline">
+        I build things at the intersection of
+        <span class="tag cs">code</span>,
+        <span class="tag data">data</span>, and
+        <span class="tag narr">story</span>.
+      </p>
+      <p class="lede">
+        Computer Science, Data Science, and Digital Narrative &amp; Interactive Design student at the
+        University of Pittsburgh. Previously a full-stack intern at CGI building RAG tooling; now designing
+        games at Carnegie Mellon's Entertainment Technology Center. Seeking <strong>Summer 2027
+        internships</strong> in software engineering, AI/data, or creative technology.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#work">See my work</a>
+        <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+      </div>
+      <p class="typed mono" aria-live="polite"><span id="typed"></span><span class="caret">▍</span></p>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <div class="section-head">
+        <h2>Selected work</h2>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="cs">Software</button>
+          <button class="chip" data-filter="data">Data</button>
+          <button class="chip" data-filter="narr">Interactive &amp; Narrative</button>
+        </div>
+      </div>
+      <div class="grid" id="projectGrid"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div>
+        <h2>About</h2>
+        <p>
+          I'm drawn to problems where technical rigor meets human experience — systems that are
+          fast <em>and</em> legible, analyses that tell a clear story, and interactive work that
+          makes people feel something.
+        </p>
+        <p>
+          My three majors feed each other: computer science gives me the engineering toolkit,
+          data science teaches me to ask good questions of messy information, and digital
+          narrative trains me to design for the person on the other side of the screen.
+        </p>
+        <p>
+          I also minor in English Literature and hold the Digital Studies &amp; Media certificate. Outside
+          class I'm President of Kappa Theta Pi, Secretary/Treasurer of the Pitt Performance Collaborative,
+          and a member of the CS Club and Pitt Ballet Club.
+        </p>
+      </div>
+      <div class="skills">
+        <div class="skill-group">
+          <h3 class="mono cs-text">// software</h3>
+          <ul><li>Java</li><li>Python</li><li>JavaScript</li><li>C#</li><li>C</li><li>MIPS Assembly</li><li>HTML / CSS</li><li>React</li><li>Flask</li><li>FastAPI</li><li>Docker</li><li>Git / GitHub</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="mono data-text">// data &amp; AI</h3>
+          <ul><li>SQL</li><li>PostgreSQL</li><li>pgvector</li><li>SQLite</li><li>MongoDB</li><li>pandas</li><li>LangChain</li><li>Hugging Face</li><li>Claude API</li><li>RAG</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="mono narr-text">// design &amp; narrative</h3>
+          <ul><li>Unity</li><li>Game design</li><li>ARG design</li><li>Web design</li><li>Adobe Suite</li><li>Jira / Confluence</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2>Experience &amp; education</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when mono">Aug 2026 — now</span>
+          <div>
+            <h3>Project Manager, Web Designer &amp; Game Designer</h3>
+            <p class="where">Entertainment Technology Center, Carnegie Mellon University</p>
+            <p>Shipped the first iteration of a multi-day augmented reality game with JavaScript web puzzles, Firebase hosting, and a MongoDB backend. Shaped the logic of a Gemini-powered chatbot for player interactions, coordinated a 10-person cross-institutional team, and rebuilt the full game for a second iteration based on a 4-day pilot.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when mono">Jun — Aug 2026</span>
+          <div>
+            <h3>Full Stack Software Engineering Intern</h3>
+            <p class="where">CGI</p>
+            <p>Integrated a RAG-powered knowledge base into a ticketing dashboard for a leading regional bank. Architected a PostgreSQL + pgvector store for document and ticket embeddings, built a FastAPI + Docling ingestion pipeline that summarizes files with the Claude API, developed a React dashboard, and containerized the stack with Docker.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when mono">Jan — May 2026</span>
+          <div>
+            <h3>Technical Design Team Member (Research)</h3>
+            <p class="where">HeritageRoots, University of Pittsburgh</p>
+            <p>Built an educational web platform that teaches K-12 students about Indigenous cultures through game-like experiences, including 360° image exploration with the Pannellum API.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when mono">Expected May 2028</span>
+          <div>
+            <h3>B.S. Computer Science, Data Science, and Digital Narrative &amp; Interactive Design</h3>
+            <p class="where">University of Pittsburgh · GPA 3.85</p>
+            <p>English Literature minor · Digital Studies &amp; Media Certificate. Coursework: Data Structures &amp; Algorithms, Discrete Structures, Assembly &amp; Computer Organization, System Software, Human Language Technologies, Software Engineering, Linear Algebra.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2>Let's talk.</h2>
+      <p>I'm looking for internships for Summer 2027. If you're building something interesting, I'd love to hear about it.</p>
+      <a class="email" href="mailto:natalie@goldsy.net">natalie@goldsy.net</a>
+      <ul class="links">
+        <li><a href="https://github.com/NatGold11" target="_blank" rel="noopener">GitHub ↗</a></li>
+        <li><a href="https://www.linkedin.com/in/natalie-goldsworthy-h2p" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        <li><a href="https://natality.itch.io" target="_blank" rel="noopener">itch.io ↗</a></li>
+        <li><a href="resume.pdf" target="_blank" rel="noopener">Résumé ↗</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <span>© <span id="year"></span> Natalie Goldsworthy</span>
+  </footer>
+
+  <!-- Project detail dialog -->
+  <dialog id="projectDialog" aria-labelledby="dlgTitle">
+    <button class="close" id="dlgClose" aria-label="Close">×</button>
+    <div id="dlgBody"></div>
+  </dialog>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
