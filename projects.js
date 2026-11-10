@@ -15,7 +15,7 @@ window.PROJECTS = [
     image: "images/spies.jpg",
     featured: true,
     year: "2026",
-    role: "Project manager, web designer & game designer (team project)",
+    role: "Implementation and Game Designer",
     details: [
       "Premise: the Secret Pittsburgh Innovation and Engineering Society was driven underground by its rival V.E.I.L. and hid its knowledge in creative spaces across the city. Players piece the society's history back together.",
       "Players sign in to an in-world database terminal and unlock FOUNDING, OPERATIONS and INTEL archives by solving puzzles that mix physical and digital pieces: postcard ciphers, a folding card, a camera-overlay color code, playlists, NFC tags and a live in-person actor.",
@@ -27,12 +27,30 @@ window.PROJECTS = [
     links: {}
   },
   {
+    title: "RAG Knowledge Base for Bank Ticketing",
+    summary: "A retrieval-augmented knowledge base inside a support-ticket dashboard for a leading regional bank, built during my CGI internship.",
+    disciplines: ["cs", "data"],
+    tags: ["PostgreSQL", "pgvector", "FastAPI", "React", "Claude API", "Docker"],
+    image: "images/CGI.jpg",
+    featured: "true",
+    glyph: "RAG",
+    year: "2026",
+    role: "Full Stack Software Engineering Intern, CGI",
+    details: [
+      "Designed a PostgreSQL + pgvector schema that stores and queries embeddings for both documents and tickets.",
+      "Built an ingestion pipeline with FastAPI and Docling that parses, chunks and summarizes uploaded files using Anthropic's Claude API.",
+      "Developed a React dashboard with interactive tiles and side panels that put the relevant document information next to each ticket.",
+      "Containerized the full stack with Docker and Rancher Desktop so every developer ran the same local setup.",
+      "Client work, so no code or screenshots can be shared."
+    ],
+    links: {}
+  },
+  {
     title: "Radium Girls — Projection Clock Show Controller",
     summary: "A Unity show-control system that drives a projection-mapped clock set piece for a live theatre production.",
     disciplines: ["cs", "narr"],
     tags: ["C#", "Unity 6", "Projection mapping", "Theatre tech"],
     image: "images/radiumgirls.jpg",
-    featured: true,
     year: "2026",
     role: "Sole developer",
     details: [
@@ -67,7 +85,6 @@ window.PROJECTS = [
     disciplines: ["narr", "cs"],
     tags: ["Unity", "C#", "Game design"],
     image: "images/hungergames.jpg",
-    featured: true,
     year: "2025",
     role: "Lead programmer (team of 2): built movement, combat, enemy AI, power-ups and difficulty scaling",
     details: [
@@ -80,24 +97,6 @@ window.PROJECTS = [
       "Play on itch.io": "https://natality.itch.io/hunger-games-survive-the-arena",
       "Code": "https://github.com/NatGold11/hungerGamesRougelike"
     }
-  },
-  {
-    title: "RAG Knowledge Base for Bank Ticketing",
-    summary: "A retrieval-augmented knowledge base inside a support-ticket dashboard for a leading regional bank, built during my CGI internship.",
-    disciplines: ["cs", "data"],
-    tags: ["PostgreSQL", "pgvector", "FastAPI", "React", "Claude API", "Docker"],
-    image: "images/CGI.jpg",
-    glyph: "RAG",
-    year: "2026",
-    role: "Full Stack Software Engineering Intern, CGI",
-    details: [
-      "Designed a PostgreSQL + pgvector schema that stores and queries embeddings for both documents and tickets.",
-      "Built an ingestion pipeline with FastAPI and Docling that parses, chunks and summarizes uploaded files using Anthropic's Claude API.",
-      "Developed a React dashboard with interactive tiles and side panels that put the relevant document information next to each ticket.",
-      "Containerized the full stack with Docker and Rancher Desktop so every developer ran the same local setup.",
-      "Client work, so no code or screenshots can be shared."
-    ],
-    links: {}
   },
   {
     title: "NoMoreWhen2Meet",
