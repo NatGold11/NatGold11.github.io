@@ -11,20 +11,21 @@ window.PROJECTS = [
     title: "S.P.I.E.S. — Alternate Reality Game",
     summary: "A Pittsburgh-wide ARG where players crack physical and digital puzzles and talk with A.R.T.I., an AI agent guarding a secret society's archives.",
     disciplines: ["narr", "cs"],
-    tags: ["JavaScript", "Firebase", "Express", "Gemini API", "Game design"],
+    tags: ["JavaScript", "Firebase/Firestore", "Gemini API", "Game design"],
     image: "images/spies.jpg",
     featured: true,
     year: "2026",
     role: "Implementation and Game Designer",
     details: [
       "Premise: the Secret Pittsburgh Innovation and Engineering Society was driven underground by its rival V.E.I.L. and hid its knowledge in creative spaces across the city. Players piece the society's history back together.",
-      "Players sign in to an in-world database terminal and unlock FOUNDING, OPERATIONS and INTEL archives by solving puzzles that mix physical and digital pieces: postcard ciphers, a folding card, a camera-overlay color code, playlists, NFC tags and a live in-person actor.",
-      "A.R.T.I., a Gemini-powered chatbot with a sassy, cryptic personality, guides players. Access codes are checked on the server, not by the model, so the chatbot can't be talked into giving away answers.",
-      "Moved the standalone Express server onto Firebase Cloud Functions with Hosting rewrites, and set up hosting, Firestore player progress and pull-request preview deploys.",
-      "Built several puzzles and their solution flows: the folding puzzle, the word-search reveal, the Fluxspace color-code pages and the MCG puzzle.",
-      "Ran a 4-day pilot, then redesigned and rebuilt the game for its second iteration based on what we learned."
+      "Responsible for completing and executing first iteration of the ARG. Debugged and playtested within existing code and design base.",
+      "Moved the static Express site to a dynamically-hosted server via Firebase, transferred Firebase No-SQL database from original project.",
+      "Defined use cases and implementation of A.R.T.I., an experimental Gemini-powered chatbot designed to lower the barrier of implementation for ARGs.",
+      "Led frequent conversation between a cross-institutional team of 10+ members.",
+      "Worked in fast-paced, frequently changing enviroment. Pivoted quickly when experienced issues with puzzles and features.",
+      "Completed a full redesign and rebuild of second iteration of ARG, expanding from the 4-day pilot to a full 2-week experience."
     ],
-    links: {}
+    links: {} // TODO: Add v2 website after finish
   },
   {
     title: "RAG Knowledge Base for Bank Ticketing",
@@ -37,11 +38,11 @@ window.PROJECTS = [
     year: "2026",
     role: "Full Stack Software Engineering Intern, CGI",
     details: [
-      "Designed a PostgreSQL + pgvector schema that stores and queries embeddings for both documents and tickets.",
+      "Developed a knowledge base dashboard to descrease bank teller resolution times for client issues. All information documents are stored in a unified database, searchable, and summarized for easy access.",
       "Built an ingestion pipeline with FastAPI and Docling that parses, chunks and summarizes uploaded files using Anthropic's Claude API.",
       "Developed a React dashboard with interactive tiles and side panels that put the relevant document information next to each ticket.",
-      "Containerized the full stack with Docker and Rancher Desktop so every developer ran the same local setup.",
-      "Client work, so no code or screenshots can be shared."
+      "Designed a PostgreSQL + pgvector schema that stores and queries embeddings for both documents and tickets.",
+      "Containerized the full stack with Docker and Rancher Desktop so every developer ran the same local setup."
     ],
     links: {}
   },
@@ -54,11 +55,11 @@ window.PROJECTS = [
     year: "2026",
     role: "Sole developer",
     details: [
-      "Every action is a text command (clock/set 11:59:50, media/play 4, calibrate/save) routed through one controller. The keyboard, the operator UI and a command line all use the same path, and the router is thread-safe so a Stream Deck can be added later.",
-      "An A/B media engine preloads the next cue, then cuts or crossfades into it and holds the last frame of each video, so the clock face never goes black during the show.",
-      "Calibration mode moves, scales and rotates each mapped region and shows test patterns for alignment. Settings are saved per venue, and the operator preview matches the projector output pixel for pixel.",
-      "The clock keeps its own time, so it can start, stop or jump to any moment on cue. The hands tick with a slight overshoot for a mechanical feel.",
-      "Built-in safeguards for live use, such as a double-confirm quit, so a stray keypress can't end the show."
+      "Built a custom projection-mapping system in Unity to allow for live-queueing of a large-scale projection-mapped clock set piece.",
+      "Created queueing system that allows for keyboard shortcuts or terminal-style commands, allowing for flexability regardless of show pacing or interuptions.",
+      "Implemented calibration system that allows for projection to be moved, scaled, and rotated to perfectly align with physical set piece.",
+      "Developed A/B media engine that preloads the next cue, then cuts or crossfades into it and holds the last frame of each video, so the clock face never goes black, flickers, or jumps during the show.",
+      "Projected clock keeps its own time, so it can start, stop or jump to any moment on cue. The hands tick with a slight overshoot for a mechanical feel."
     ],
     links: { "Code": "https://github.com/NatGold11/RadiumGirls_ShowController" }
   },
@@ -110,9 +111,9 @@ window.PROJECTS = [
     details: [
       "Scrapes the poll's time-slot grid by parsing the page's slot IDs and timestamps.",
       "Pulls events from every calendar you own through the Google Calendar API, using OAuth with a cached, auto-refreshing token.",
-      "Snaps events to When2Meet's 15-minute grid, skips all-day events and converts time zones, then works out which slots you're free.",
+      "Snaps events to When2Meet's 15-minute grid, converts time zones, then works out which slots you're free.",
       "Drives headless Chromium with Playwright to sign in to the poll and click every free slot, with a progress bar in the terminal.",
-      "Keeps secrets (credentials, tokens, .env) out of version control."
+      "Further development planned for publically accessible web frontend."
     ],
     links: { "Code": "https://github.com/NatGold11/NoMoreWhen2Meet" }
   },
