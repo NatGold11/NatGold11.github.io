@@ -56,7 +56,7 @@ window.PROJECTS = [
     role: "Sole developer",
     details: [
       "Built a custom projection-mapping system in Unity to allow for live-queueing of a large-scale projection-mapped clock set piece.",
-      "Created queueing system that allows for keyboard shortcuts or terminal-style commands, allowing for flexability regardless of show pacing or interuptions.",
+      "Created queueing system that allows for keyboard shortcuts or terminal-style commands, allowing for flexability regardless of show pacing or interruptions.",
       "Implemented calibration system that allows for projection to be moved, scaled, and rotated to perfectly align with physical set piece.",
       "Developed A/B media engine that preloads the next cue, then cuts or crossfades into it and holds the last frame of each video, so the clock face never goes black, flickers, or jumps during the show.",
       "Projected clock keeps its own time, so it can start, stop or jump to any moment on cue. The hands tick with a slight overshoot for a mechanical feel."
